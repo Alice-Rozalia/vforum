@@ -1,0 +1,935 @@
+2021-01-25 18:36:59.865  INFO 11328 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 11328 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 18:36:59.867  INFO 11328 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 18:37:00.378  WARN 11328 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 18:37:00.478  WARN 11328 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 18:37:00.719  INFO 11328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8360 (http)
+2021-01-25 18:37:00.725  INFO 11328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 18:37:00.726  INFO 11328 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 18:37:00.792  INFO 11328 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 18:37:00.792  INFO 11328 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 895 ms
+2021-01-25 18:37:00.830  WARN 11328 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnController': Unsatisfied dependency expressed through field 'columnService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.vforum.service.ColumnService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-01-25 18:37:00.832  INFO 11328 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-01-25 18:37:00.840  WARN 11328 --- [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:41)
+2021-01-25 18:37:00.845  INFO 11328 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-25 18:37:00.860 ERROR 11328 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field columnService in org.vforum.controller.ColumnController required a bean of type 'org.vforum.service.ColumnService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.vforum.service.ColumnService' in your configuration.
+
+2021-01-25 18:37:14.077  INFO 2296 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 2296 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 18:37:14.079  INFO 2296 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 18:37:14.542  WARN 2296 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 18:37:14.628  WARN 2296 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 18:37:14.833  INFO 2296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8360 (http)
+2021-01-25 18:37:14.838  INFO 2296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 18:37:14.839  INFO 2296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 18:37:14.901  INFO 2296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 18:37:14.901  INFO 2296 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 794 ms
+2021-01-25 18:37:15.070  WARN 2296 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnController': Unsatisfied dependency expressed through field 'columnService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnServiceImpl': Unsatisfied dependency expressed through field 'columnMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnMapper' defined in file [F:\Code\11.Java\vforum\vforum-api\target\classes\org\vforum\mapper\ColumnMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ArticleMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ArticleMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ArticleVo
+2021-01-25 18:37:15.071  INFO 2296 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-01-25 18:37:15.077  WARN 2296 --- [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:41)
+2021-01-25 18:37:15.082  INFO 2296 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-25 18:37:15.095 ERROR 2296 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnController': Unsatisfied dependency expressed through field 'columnService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnServiceImpl': Unsatisfied dependency expressed through field 'columnMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnMapper' defined in file [F:\Code\11.Java\vforum\vforum-api\target\classes\org\vforum\mapper\ColumnMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ArticleMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ArticleMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ArticleVo
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at org.vforum.App.main(App.java:16)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnServiceImpl': Unsatisfied dependency expressed through field 'columnMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnMapper' defined in file [F:\Code\11.Java\vforum\vforum-api\target\classes\org\vforum\mapper\ColumnMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ArticleMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ArticleMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ArticleVo
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnMapper' defined in file [F:\Code\11.Java\vforum\vforum-api\target\classes\org\vforum\mapper\ColumnMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ArticleMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ArticleMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ArticleVo
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1401)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ArticleMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ArticleMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ArticleVo
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1503)
+	... 44 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ArticleMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ArticleMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ArticleVo
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 57 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ArticleMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ArticleMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ArticleVo
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.sqlSessionFactory(MapperAutoConfiguration.java:155)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$945c43ea.CGLIB$sqlSessionFactory$0(<generated>)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$945c43ea$$FastClassBySpringCGLIB$$36843709.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$945c43ea.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 58 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ArticleMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ArticleVo
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:611)
+	... 71 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ArticleVo
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
+	... 73 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ArticleVo
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 77 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: ArticleVo
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 79 common frames omitted
+
+2021-01-25 18:37:45.730  INFO 7352 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 7352 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 18:37:45.732  INFO 7352 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 18:37:46.197  WARN 7352 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 18:37:46.285  WARN 7352 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 18:37:46.493  INFO 7352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8360 (http)
+2021-01-25 18:37:46.499  INFO 7352 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 18:37:46.499  INFO 7352 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 18:37:46.561  INFO 7352 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 18:37:46.561  INFO 7352 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 801 ms
+2021-01-25 18:37:46.692  WARN 7352 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnController': Unsatisfied dependency expressed through field 'columnService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnServiceImpl': Unsatisfied dependency expressed through field 'columnMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnMapper' defined in file [F:\Code\11.Java\vforum\vforum-api\target\classes\org\vforum\mapper\ColumnMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+2021-01-25 18:37:46.694  INFO 7352 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-01-25 18:37:46.700  WARN 7352 --- [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:41)
+2021-01-25 18:37:46.706  INFO 7352 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-25 18:37:46.718 ERROR 7352 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnController': Unsatisfied dependency expressed through field 'columnService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnServiceImpl': Unsatisfied dependency expressed through field 'columnMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnMapper' defined in file [F:\Code\11.Java\vforum\vforum-api\target\classes\org\vforum\mapper\ColumnMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at org.vforum.App.main(App.java:16)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnServiceImpl': Unsatisfied dependency expressed through field 'columnMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnMapper' defined in file [F:\Code\11.Java\vforum\vforum-api\target\classes\org\vforum\mapper\ColumnMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnMapper' defined in file [F:\Code\11.Java\vforum\vforum-api\target\classes\org\vforum\mapper\ColumnMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1401)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1503)
+	... 44 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 57 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.sqlSessionFactory(MapperAutoConfiguration.java:155)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$945c43ea.CGLIB$sqlSessionFactory$1(<generated>)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$945c43ea$$FastClassBySpringCGLIB$$36843709.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$945c43ea.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 58 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:263)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:81)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:610)
+	... 71 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 文件提前结束。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1014)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:261)
+	... 74 common frames omitted
+
+2021-01-25 18:39:07.981  INFO 752 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 752 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 18:39:07.983  INFO 752 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 18:39:08.455  WARN 752 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 18:39:08.544  WARN 752 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 18:39:08.752  INFO 752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8360 (http)
+2021-01-25 18:39:08.757  INFO 752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 18:39:08.758  INFO 752 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 18:39:08.819  INFO 752 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 18:39:08.819  INFO 752 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 808 ms
+2021-01-25 18:39:08.944  WARN 752 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnController': Unsatisfied dependency expressed through field 'columnService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnServiceImpl': Unsatisfied dependency expressed through field 'columnMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnMapper' defined in file [F:\Code\11.Java\vforum\vforum-api\target\classes\org\vforum\mapper\ColumnMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+2021-01-25 18:39:08.946  INFO 752 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-01-25 18:39:08.952  WARN 752 --- [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:41)
+2021-01-25 18:39:08.957  INFO 752 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-25 18:39:08.969 ERROR 752 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnController': Unsatisfied dependency expressed through field 'columnService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnServiceImpl': Unsatisfied dependency expressed through field 'columnMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnMapper' defined in file [F:\Code\11.Java\vforum\vforum-api\target\classes\org\vforum\mapper\ColumnMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at org.vforum.App.main(App.java:16)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnServiceImpl': Unsatisfied dependency expressed through field 'columnMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnMapper' defined in file [F:\Code\11.Java\vforum\vforum-api\target\classes\org\vforum\mapper\ColumnMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnMapper' defined in file [F:\Code\11.Java\vforum\vforum-api\target\classes\org\vforum\mapper\ColumnMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1401)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1503)
+	... 44 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 57 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.sqlSessionFactory(MapperAutoConfiguration.java:155)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$945c43ea.CGLIB$sqlSessionFactory$1(<generated>)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$945c43ea$$FastClassBySpringCGLIB$$36843709.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$945c43ea.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 58 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:263)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:81)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:610)
+	... 71 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 文件提前结束。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1014)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:261)
+	... 74 common frames omitted
+
+2021-01-25 18:39:55.105  INFO 3384 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 3384 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 18:39:55.107  INFO 3384 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 18:39:55.611  WARN 3384 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 18:39:55.696  WARN 3384 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 18:39:55.899  INFO 3384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8360 (http)
+2021-01-25 18:39:55.904  INFO 3384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 18:39:55.904  INFO 3384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 18:39:55.965  INFO 3384 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 18:39:55.965  INFO 3384 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 825 ms
+2021-01-25 18:39:56.091  WARN 3384 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnController': Unsatisfied dependency expressed through field 'columnService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnServiceImpl': Unsatisfied dependency expressed through field 'columnMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnMapper' defined in file [F:\Code\11.Java\vforum\vforum-api\target\classes\org\vforum\mapper\ColumnMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+2021-01-25 18:39:56.093  INFO 3384 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-01-25 18:39:56.099  WARN 3384 --- [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:41)
+2021-01-25 18:39:56.105  INFO 3384 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-25 18:39:56.117 ERROR 3384 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnController': Unsatisfied dependency expressed through field 'columnService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnServiceImpl': Unsatisfied dependency expressed through field 'columnMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnMapper' defined in file [F:\Code\11.Java\vforum\vforum-api\target\classes\org\vforum\mapper\ColumnMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at org.vforum.App.main(App.java:16)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnServiceImpl': Unsatisfied dependency expressed through field 'columnMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnMapper' defined in file [F:\Code\11.Java\vforum\vforum-api\target\classes\org\vforum\mapper\ColumnMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'columnMapper' defined in file [F:\Code\11.Java\vforum\vforum-api\target\classes\org\vforum\mapper\ColumnMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1518)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1401)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1503)
+	... 44 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 57 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.sqlSessionFactory(MapperAutoConfiguration.java:155)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$7460cfd2.CGLIB$sqlSessionFactory$1(<generated>)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$7460cfd2$$FastClassBySpringCGLIB$$65be23cd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$7460cfd2.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 58 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 17; 文件提前结束。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:263)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:81)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:610)
+	... 71 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 文件提前结束。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1014)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:261)
+	... 74 common frames omitted
+
+2021-01-25 18:40:20.110  INFO 8004 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 8004 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 18:40:20.112  INFO 8004 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 18:40:20.576  WARN 8004 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 18:40:20.660  WARN 8004 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 18:40:20.865  INFO 8004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8360 (http)
+2021-01-25 18:40:20.870  INFO 8004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 18:40:20.870  INFO 8004 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 18:40:20.932  INFO 8004 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 18:40:20.932  INFO 8004 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 793 ms
+2021-01-25 18:40:21.386  INFO 8004 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-25 18:40:21.434  INFO 8004 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-25 18:40:21.578  INFO 8004 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 16aa205e-1c9a-4063-a9bb-90335394e233
+
+2021-01-25 18:40:21.650  INFO 8004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@545b5ed0, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a8a3ada, org.springframework.security.web.header.HeaderWriterFilter@6ddee60f, org.springframework.security.web.csrf.CsrfFilter@1da1380b, org.springframework.security.web.authentication.logout.LogoutFilter@8aeab9e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@41f4039e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3a00b15d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5a7df831, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@996a546, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ec7b5de, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5482bcac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@667dcaad, org.springframework.security.web.session.SessionManagementFilter@4aa2877c, org.springframework.security.web.access.ExceptionTranslationFilter@7d42542, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67bb4dcd]
+2021-01-25 18:40:21.694  WARN 8004 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8360 is already in use
+2021-01-25 18:40:21.695  INFO 8004 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-25 18:40:21.698  INFO 8004 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-01-25 18:40:21.704  WARN 8004 --- [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:41)
+2021-01-25 18:40:21.709  INFO 8004 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-25 18:40:21.717 ERROR 8004 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8360 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8360 or configure this application to listen on another port.
+
+2021-01-25 18:40:49.875  INFO 15672 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 15672 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 18:40:49.877  INFO 15672 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 18:40:50.348  WARN 15672 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 18:40:50.432  WARN 15672 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 18:40:50.633  INFO 15672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-25 18:40:50.638  INFO 15672 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 18:40:50.639  INFO 15672 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 18:40:50.699  INFO 15672 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 18:40:50.699  INFO 15672 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 793 ms
+2021-01-25 18:40:51.125  INFO 15672 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-25 18:40:51.169  INFO 15672 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-25 18:40:51.289  INFO 15672 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0d1e7ac1-7e2f-4211-b3c5-48fd11fa329c
+
+2021-01-25 18:40:51.345  INFO 15672 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@545b5ed0, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a8a3ada, org.springframework.security.web.header.HeaderWriterFilter@6ddee60f, org.springframework.security.web.csrf.CsrfFilter@1da1380b, org.springframework.security.web.authentication.logout.LogoutFilter@8aeab9e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@41f4039e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3a00b15d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5a7df831, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@996a546, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ec7b5de, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5482bcac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@667dcaad, org.springframework.security.web.session.SessionManagementFilter@4aa2877c, org.springframework.security.web.access.ExceptionTranslationFilter@7d42542, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67bb4dcd]
+2021-01-25 18:40:51.394  INFO 15672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-25 18:40:51.395  INFO 15672 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-25 18:40:51.407  INFO 15672 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-25 18:40:51.429  INFO 15672 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-25 18:40:51.508  INFO 15672 --- [main] org.vforum.App                           : Started App in 1.92 seconds (JVM running for 2.405)
+2021-01-25 18:41:12.981  INFO 15672 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-25 18:41:12.982  INFO 15672 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-25 18:41:12.983  INFO 15672 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-25 18:42:51.807  INFO 22312 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 22312 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 18:42:51.808  INFO 22312 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 18:42:52.280  WARN 22312 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 18:42:52.364  WARN 22312 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 18:42:52.571  INFO 22312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-25 18:42:52.576  INFO 22312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 18:42:52.577  INFO 22312 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 18:42:52.639  INFO 22312 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 18:42:52.639  INFO 22312 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 802 ms
+2021-01-25 18:42:53.070  INFO 22312 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-25 18:42:53.116  INFO 22312 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-25 18:42:53.238  INFO 22312 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6efc1744-c6c6-418b-b9ea-8e5e2629cabf
+
+2021-01-25 18:42:53.296  INFO 22312 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ff00507, org.springframework.security.web.context.SecurityContextPersistenceFilter@4aa31ffc, org.springframework.security.web.header.HeaderWriterFilter@40709f9, org.springframework.security.web.csrf.CsrfFilter@4f486211, org.springframework.security.web.authentication.logout.LogoutFilter@7412a438, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@34451ed8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3c952a33, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@603cabc4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@270a620, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d42542, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e829e50, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67fa5045, org.springframework.security.web.session.SessionManagementFilter@6393bf8b, org.springframework.security.web.access.ExceptionTranslationFilter@83bb0f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31973858]
+2021-01-25 18:42:53.344  INFO 22312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-25 18:42:53.345  INFO 22312 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-25 18:42:53.353  INFO 22312 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-25 18:42:53.374  INFO 22312 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-25 18:42:53.445  INFO 22312 --- [main] org.vforum.App                           : Started App in 1.936 seconds (JVM running for 2.419)
+2021-01-25 18:42:55.019  INFO 22312 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-25 18:42:55.019  INFO 22312 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-25 18:42:55.020  INFO 22312 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-25 18:43:36.790  INFO 22312 --- [http-nio-10086-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-01-25 19:01:07.498  INFO 24220 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 24220 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 19:01:07.500  INFO 24220 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 19:01:07.983  WARN 24220 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 19:01:08.074  WARN 24220 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 19:01:08.282  INFO 24220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-25 19:01:08.287  INFO 24220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 19:01:08.287  INFO 24220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 19:01:08.348  INFO 24220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 19:01:08.348  INFO 24220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 819 ms
+2021-01-25 19:01:08.788  INFO 24220 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-25 19:01:08.834  INFO 24220 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-25 19:01:08.960  INFO 24220 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e6ff11b5-1bec-484b-9859-5541ff762565
+
+2021-01-25 19:01:09.018  INFO 24220 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c134052, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b862408, org.springframework.security.web.header.HeaderWriterFilter@7945b206, org.springframework.security.web.csrf.CsrfFilter@4bc59b27, org.springframework.security.web.authentication.logout.LogoutFilter@709f0202, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@61bb1e4d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@14168e1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@69de5bed, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6f347d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e829e50, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ec7b5de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@750f64fe, org.springframework.security.web.session.SessionManagementFilter@4d09cade, org.springframework.security.web.access.ExceptionTranslationFilter@6b1b19cf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10850d17]
+2021-01-25 19:01:09.067  INFO 24220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-25 19:01:09.068  INFO 24220 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-25 19:01:09.077  INFO 24220 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-25 19:01:09.099  INFO 24220 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-25 19:01:09.179  INFO 24220 --- [main] org.vforum.App                           : Started App in 1.98 seconds (JVM running for 2.466)
+2021-01-25 19:01:12.617  INFO 24220 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-25 19:01:12.617  INFO 24220 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-25 19:01:12.618  INFO 24220 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-25 19:03:03.040  INFO 4860 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 4860 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 19:03:03.042  INFO 4860 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 19:03:03.513  WARN 4860 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 19:03:03.601  WARN 4860 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 19:03:03.808  INFO 4860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-25 19:03:03.813  INFO 4860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 19:03:03.814  INFO 4860 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 19:03:03.876  INFO 4860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 19:03:03.876  INFO 4860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 805 ms
+2021-01-25 19:03:04.307  INFO 4860 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-25 19:03:04.353  INFO 4860 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-25 19:03:04.476  INFO 4860 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a04eccc5-b862-440a-9614-40b8f0dfb71a
+
+2021-01-25 19:03:04.535  INFO 4860 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a7df831, org.springframework.security.web.context.SecurityContextPersistenceFilter@500051c5, org.springframework.security.web.header.HeaderWriterFilter@6e829e50, org.springframework.security.web.csrf.CsrfFilter@1095d23a, org.springframework.security.web.authentication.logout.LogoutFilter@2a2dc0a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5ff00507, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@36ef1d65, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@667dcaad, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4fc165f6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c19d42e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10244722, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22d7fd41, org.springframework.security.web.session.SessionManagementFilter@307e4c44, org.springframework.security.web.access.ExceptionTranslationFilter@4d09cade, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@738d37fc]
+2021-01-25 19:03:04.583  INFO 4860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-25 19:03:04.583  INFO 4860 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-25 19:03:04.592  INFO 4860 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-25 19:03:04.611  INFO 4860 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-25 19:03:04.690  INFO 4860 --- [main] org.vforum.App                           : Started App in 1.944 seconds (JVM running for 2.425)
+2021-01-25 19:03:07.499  INFO 4860 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-25 19:03:07.499  INFO 4860 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-25 19:03:07.500  INFO 4860 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-25 19:04:06.600  INFO 17088 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 17088 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 19:04:06.602  INFO 17088 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 19:04:07.096  WARN 17088 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 19:04:07.176  WARN 17088 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 19:04:07.271  INFO 17088 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6f38a289' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-25 19:04:07.274  INFO 17088 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-25 19:04:07.413  INFO 17088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-25 19:04:07.419  INFO 17088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 19:04:07.419  INFO 17088 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 19:04:07.481  INFO 17088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 19:04:07.482  INFO 17088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 851 ms
+2021-01-25 19:04:07.992  INFO 17088 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: dfb5e046-8614-491d-a321-995107d6ae7b
+
+2021-01-25 19:04:08.043  INFO 17088 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50a13c2f, org.springframework.security.web.context.SecurityContextPersistenceFilter@36e43829, org.springframework.security.web.header.HeaderWriterFilter@3a3ed300, org.springframework.security.web.authentication.logout.LogoutFilter@6870c3c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ec1963c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@999b951, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@610d28b8, org.springframework.security.web.session.SessionManagementFilter@6215366a, org.springframework.security.web.access.ExceptionTranslationFilter@7885776b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20a967fe]
+2021-01-25 19:04:08.065  INFO 17088 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-25 19:04:08.126  INFO 17088 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-25 19:04:08.302  INFO 17088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-25 19:04:08.303  INFO 17088 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-25 19:04:08.312  INFO 17088 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-25 19:04:08.337  INFO 17088 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-25 19:04:08.408  INFO 17088 --- [main] org.vforum.App                           : Started App in 2.102 seconds (JVM running for 2.59)
+2021-01-25 19:04:09.592  INFO 17088 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-25 19:04:09.592  INFO 17088 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-25 19:04:09.593  INFO 17088 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-25 19:04:25.266  INFO 17088 --- [http-nio-10086-exec-10] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-01-25 19:13:18.144  INFO 21948 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 21948 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 19:13:18.146  INFO 21948 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 19:13:18.655  WARN 21948 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 19:13:18.695  INFO 21948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-25 19:13:18.697  INFO 21948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-25 19:13:18.716  INFO 21948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-01-25 19:13:18.792  WARN 21948 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 19:13:18.936  INFO 21948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@f679798' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-25 19:13:18.938  INFO 21948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-25 19:13:19.077  INFO 21948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-25 19:13:19.082  INFO 21948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 19:13:19.083  INFO 21948 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 19:13:19.145  INFO 21948 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 19:13:19.145  INFO 21948 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 971 ms
+2021-01-25 19:13:19.622  INFO 21948 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 219ccbf7-259f-4c18-a7aa-4b8f8238c52e
+
+2021-01-25 19:13:19.672  INFO 21948 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11dcd42c, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d88e6b9, org.springframework.security.web.header.HeaderWriterFilter@1039bfc4, org.springframework.security.web.authentication.logout.LogoutFilter@31973858, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@208205ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b8137c5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d13baac, org.springframework.security.web.session.SessionManagementFilter@36068727, org.springframework.security.web.access.ExceptionTranslationFilter@66fbc5e7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@715a70e9]
+2021-01-25 19:13:19.691  INFO 21948 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-25 19:13:19.767  INFO 21948 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-25 19:13:20.150  INFO 21948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-25 19:13:20.151  INFO 21948 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-25 19:13:20.160  INFO 21948 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-25 19:13:20.183  INFO 21948 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-25 19:13:20.261  INFO 21948 --- [main] org.vforum.App                           : Started App in 2.415 seconds (JVM running for 2.926)
+2021-01-25 19:13:26.117  INFO 21948 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-25 19:13:26.118  INFO 21948 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-25 19:13:26.119  INFO 21948 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-25 19:16:37.728  INFO 10096 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 10096 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 19:16:37.731  INFO 10096 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 19:16:38.255  WARN 10096 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 19:16:38.293  INFO 10096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-25 19:16:38.295  INFO 10096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-25 19:16:38.313  INFO 10096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-01-25 19:16:38.387  WARN 10096 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 19:16:38.528  INFO 10096 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@12d1f1d4' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-25 19:16:38.531  INFO 10096 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-25 19:16:38.668  INFO 10096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-25 19:16:38.674  INFO 10096 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 19:16:38.674  INFO 10096 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 19:16:38.735  INFO 10096 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 19:16:38.735  INFO 10096 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 976 ms
+2021-01-25 19:16:39.213  INFO 10096 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: aec75baf-bd2b-495f-bbab-926282f8a825
+
+2021-01-25 19:16:39.263  INFO 10096 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@602f8f94, org.springframework.security.web.context.SecurityContextPersistenceFilter@65ef48f2, org.springframework.security.web.header.HeaderWriterFilter@9accff0, org.springframework.security.web.authentication.logout.LogoutFilter@7364eed1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72543547, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2173a742, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42507640, org.springframework.security.web.session.SessionManagementFilter@7186b202, org.springframework.security.web.access.ExceptionTranslationFilter@134f8ef6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58324c9f]
+2021-01-25 19:16:39.283  INFO 10096 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-25 19:16:39.359  INFO 10096 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-25 19:16:39.736  INFO 10096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-25 19:16:39.737  INFO 10096 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-25 19:16:39.746  INFO 10096 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-25 19:16:39.766  INFO 10096 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-25 19:16:39.844  INFO 10096 --- [main] org.vforum.App                           : Started App in 2.428 seconds (JVM running for 2.946)
+2021-01-25 19:16:42.949  INFO 10096 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-25 19:16:42.949  INFO 10096 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-25 19:16:42.950  INFO 10096 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-25 19:16:56.860 ERROR 10096 --- [http-nio-10086-exec-8] o.v.c.handler.GlobalExceptionHandler     : Validation failed for argument [0] in public org.vforum.common.entity.Result org.vforum.controller.ColumnController.addColumn(org.vforum.model.entity.Column): [Field error in object 'column' on field 'introduction': rejected value [null]; codes [NotBlank.column.introduction,NotBlank.introduction,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [column.introduction,introduction]; arguments []; default message [introduction]]; default message [专栏介绍不能为空！]] 
+2021-01-25 19:18:32.811  INFO 14116 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 14116 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 19:18:32.813  INFO 14116 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 19:18:33.343  WARN 14116 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 19:18:33.381  INFO 14116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-25 19:18:33.382  INFO 14116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-25 19:18:33.400  INFO 14116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-01-25 19:18:33.473  WARN 14116 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 19:18:33.615  INFO 14116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2d82408' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-25 19:18:33.618  INFO 14116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-25 19:18:33.755  INFO 14116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-25 19:18:33.760  INFO 14116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 19:18:33.760  INFO 14116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 19:18:33.819  INFO 14116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 19:18:33.819  INFO 14116 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 976 ms
+2021-01-25 19:18:34.288  INFO 14116 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: fdb29801-959b-44b2-a459-4ceb4690e884
+
+2021-01-25 19:18:34.336  INFO 14116 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11dcd42c, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d88e6b9, org.springframework.security.web.header.HeaderWriterFilter@1039bfc4, org.springframework.security.web.authentication.logout.LogoutFilter@31973858, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@208205ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b8137c5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d13baac, org.springframework.security.web.session.SessionManagementFilter@36068727, org.springframework.security.web.access.ExceptionTranslationFilter@66fbc5e7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@715a70e9]
+2021-01-25 19:18:34.354  INFO 14116 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-25 19:18:34.432  INFO 14116 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-25 19:18:34.807  INFO 14116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-25 19:18:34.808  INFO 14116 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-25 19:18:34.816  INFO 14116 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-25 19:18:34.835  INFO 14116 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-25 19:18:34.912  INFO 14116 --- [main] org.vforum.App                           : Started App in 2.407 seconds (JVM running for 2.913)
+2021-01-25 19:18:36.573  INFO 14116 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-25 19:18:36.573  INFO 14116 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-25 19:18:36.574  INFO 14116 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-25 19:18:36.661 ERROR 14116 --- [http-nio-10086-exec-1] o.v.c.handler.GlobalExceptionHandler     : Validation failed for argument [0] in public org.vforum.common.entity.Result org.vforum.controller.ColumnController.addColumn(org.vforum.model.entity.Column): [Field error in object 'column' on field 'introduction': rejected value [null]; codes [NotBlank.column.introduction,NotBlank.introduction,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [column.introduction,introduction]; arguments []; default message [introduction]]; default message [专栏介绍不能为空！]] 
+2021-01-25 19:19:35.656 ERROR 14116 --- [http-nio-10086-exec-8] o.v.c.handler.GlobalExceptionHandler     : Validation failed for argument [0] in public org.vforum.common.entity.Result org.vforum.controller.ColumnController.addColumn(org.vforum.model.entity.Column): [Field error in object 'column' on field 'name': rejected value [null]; codes [NotBlank.column.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [column.name,name]; arguments []; default message [name]]; default message [专栏名称不能为空！]] 
+2021-01-25 19:19:47.478  INFO 14116 --- [http-nio-10086-exec-10] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-01-25 23:37:59.590  INFO 10232 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 10232 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 23:37:59.592  INFO 10232 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 23:38:00.208  WARN 10232 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 23:38:00.259  INFO 10232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-25 23:38:00.261  INFO 10232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-25 23:38:00.284  INFO 10232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2021-01-25 23:38:00.372  WARN 10232 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 23:38:00.533  INFO 10232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7c8f9c2e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-25 23:38:00.535  INFO 10232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-25 23:38:00.695  INFO 10232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-25 23:38:00.701  INFO 10232 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 23:38:00.702  INFO 10232 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 23:38:00.772  INFO 10232 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 23:38:00.772  INFO 10232 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1148 ms
+2021-01-25 23:38:01.331  INFO 10232 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1d6d6d26-aba5-4b29-9499-0ee8ac39ac73
+
+2021-01-25 23:38:01.394  INFO 10232 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a9ceddf, org.springframework.security.web.context.SecurityContextPersistenceFilter@25ffd826, org.springframework.security.web.header.HeaderWriterFilter@5700c9db, org.springframework.security.web.authentication.logout.LogoutFilter@270a620, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e29f4f6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@684e8c9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28157173, org.springframework.security.web.session.SessionManagementFilter@44dc7b7d, org.springframework.security.web.access.ExceptionTranslationFilter@22bf9122, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21ae657b]
+2021-01-25 23:38:01.414  INFO 10232 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-25 23:38:01.489  INFO 10232 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-25 23:38:01.911  INFO 10232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-25 23:38:01.911  INFO 10232 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-25 23:38:01.923  INFO 10232 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-25 23:38:01.946  INFO 10232 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-25 23:38:02.036  INFO 10232 --- [main] org.vforum.App                           : Started App in 2.819 seconds (JVM running for 3.411)
+2021-01-25 23:38:05.153  INFO 10232 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-25 23:38:05.153  INFO 10232 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-25 23:38:05.154  INFO 10232 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-25 23:38:12.339  INFO 10232 --- [http-nio-10086-exec-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-01-25 23:41:19.853  INFO 5436 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 5436 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 23:41:19.854  INFO 5436 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 23:41:20.385  WARN 5436 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 23:41:20.424  INFO 5436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-25 23:41:20.425  INFO 5436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-25 23:41:20.443  INFO 5436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-01-25 23:41:20.518  WARN 5436 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 23:41:20.662  INFO 5436 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3ce53f6a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-25 23:41:20.665  INFO 5436 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-25 23:41:20.804  INFO 5436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-25 23:41:20.809  INFO 5436 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 23:41:20.809  INFO 5436 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 23:41:20.869  INFO 5436 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 23:41:20.870  INFO 5436 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 988 ms
+2021-01-25 23:41:21.366  INFO 5436 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9dcca634-87c7-4f4c-a22e-7d0a46b81040
+
+2021-01-25 23:41:21.415  INFO 5436 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@162c1dfb, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f6329cb, org.springframework.security.web.header.HeaderWriterFilter@36068727, org.springframework.security.web.authentication.logout.LogoutFilter@67bb4dcd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77f4c040, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a538ed8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21ae657b, org.springframework.security.web.session.SessionManagementFilter@2173a742, org.springframework.security.web.access.ExceptionTranslationFilter@6436e181, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a47597]
+2021-01-25 23:41:21.435  INFO 5436 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-25 23:41:21.507  INFO 5436 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-25 23:41:21.873  INFO 5436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-25 23:41:21.873  INFO 5436 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-25 23:41:21.882  INFO 5436 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-25 23:41:21.901  INFO 5436 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-25 23:41:21.981  INFO 5436 --- [main] org.vforum.App                           : Started App in 2.412 seconds (JVM running for 2.922)
+2021-01-25 23:41:26.015  INFO 5436 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-25 23:41:26.016  INFO 5436 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-25 23:41:26.017  INFO 5436 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-25 23:42:35.498  INFO 10568 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 10568 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 23:42:35.500  INFO 10568 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 23:42:36.041  WARN 10568 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 23:42:36.080  INFO 10568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-25 23:42:36.082  INFO 10568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-25 23:42:36.101  INFO 10568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-01-25 23:42:36.175  WARN 10568 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 23:42:36.318  INFO 10568 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6c6366cf' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-25 23:42:36.320  INFO 10568 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-25 23:42:36.459  INFO 10568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-25 23:42:36.464  INFO 10568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 23:42:36.464  INFO 10568 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 23:42:36.525  INFO 10568 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 23:42:36.525  INFO 10568 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 993 ms
+2021-01-25 23:42:37.036  INFO 10568 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 498466f2-3b15-44bc-9642-cf748f7d993d
+
+2021-01-25 23:42:37.087  INFO 10568 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a9ceddf, org.springframework.security.web.context.SecurityContextPersistenceFilter@25ffd826, org.springframework.security.web.header.HeaderWriterFilter@5700c9db, org.springframework.security.web.authentication.logout.LogoutFilter@270a620, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e29f4f6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@684e8c9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28157173, org.springframework.security.web.session.SessionManagementFilter@44dc7b7d, org.springframework.security.web.access.ExceptionTranslationFilter@22bf9122, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21ae657b]
+2021-01-25 23:42:37.107  INFO 10568 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-25 23:42:37.180  INFO 10568 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-25 23:42:37.555  INFO 10568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-25 23:42:37.556  INFO 10568 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-25 23:42:37.564  INFO 10568 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-25 23:42:37.584  INFO 10568 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-25 23:42:37.668  INFO 10568 --- [main] org.vforum.App                           : Started App in 2.469 seconds (JVM running for 2.996)
+2021-01-25 23:42:54.266  INFO 10568 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-25 23:42:54.266  INFO 10568 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-25 23:42:54.267  INFO 10568 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-25 23:42:54.393  INFO 10568 --- [http-nio-10086-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-01-25 23:50:36.682  INFO 1360 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 1360 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-25 23:50:36.684  INFO 1360 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-25 23:50:37.194  WARN 1360 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 23:50:37.234  INFO 1360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-25 23:50:37.235  INFO 1360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-25 23:50:37.254  INFO 1360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-01-25 23:50:37.331  WARN 1360 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-25 23:50:37.471  INFO 1360 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@8f2098e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-25 23:50:37.473  INFO 1360 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-25 23:50:37.608  INFO 1360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-25 23:50:37.614  INFO 1360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-25 23:50:37.614  INFO 1360 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-25 23:50:37.674  INFO 1360 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-25 23:50:37.675  INFO 1360 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 963 ms
+2021-01-25 23:50:38.174  INFO 1360 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1c82ad22-1744-46db-83b0-4d95a3cc8703
+
+2021-01-25 23:50:38.224  INFO 1360 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52454457, org.springframework.security.web.context.SecurityContextPersistenceFilter@3cdc7b09, org.springframework.security.web.header.HeaderWriterFilter@6a15b73, org.springframework.security.web.authentication.logout.LogoutFilter@750f64fe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@684e8c9d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26865482, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4130a648, org.springframework.security.web.session.SessionManagementFilter@4a1a256d, org.springframework.security.web.access.ExceptionTranslationFilter@7f6329cb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2251b3bc]
+2021-01-25 23:50:38.244  INFO 1360 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-25 23:50:38.317  INFO 1360 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-25 23:50:38.697  INFO 1360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-25 23:50:38.698  INFO 1360 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-25 23:50:38.707  INFO 1360 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-25 23:50:38.728  INFO 1360 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-25 23:50:38.814  INFO 1360 --- [main] org.vforum.App                           : Started App in 2.426 seconds (JVM running for 2.931)
+2021-01-25 23:50:46.212  INFO 1360 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-25 23:50:46.212  INFO 1360 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-25 23:50:46.213  INFO 1360 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-25 23:51:14.156  INFO 1360 --- [http-nio-10086-exec-4] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited

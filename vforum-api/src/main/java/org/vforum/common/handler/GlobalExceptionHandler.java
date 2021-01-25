@@ -34,7 +34,7 @@ public class GlobalExceptionHandler {
     public Result error(MethodArgumentNotValidException e) {
         e.printStackTrace();
         log.error(e.getMessage());
-        return Result.error(ResultCode.PARAM_IS_BLANK);
+        return Result.error().message(e.getFieldError().getDefaultMessage());
     }
 
     /**
