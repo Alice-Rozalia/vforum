@@ -52,9 +52,38 @@ public class ColumnServiceImpl implements ColumnService {
     @Override
     public Result addColumn(Column column) {
         column.setCreateTime(System.currentTimeMillis());
+        column.setSubject(0);
         if (columnMapper.insertSelective(column) == 1) {
             return Result.ok(ResultCode.ADD_SUCCESS);
         }
-        return Result.ok(ResultCode.ADD_ERROR);
+        return Result.error(ResultCode.ADD_ERROR);
+    }
+
+    /**
+     * 修改专栏
+     *
+     * @param column
+     * @return
+     */
+    @Override
+    public Result updateColumn(Column column) {
+        if (columnMapper.insertSelective(column) == 1) {
+            return Result.ok(ResultCode.UPDATE_SUCCESS);
+        }
+        return Result.error(ResultCode.UPDATE_ERROR);
+    }
+
+    /**
+     * 删除专栏
+     *
+     * @param columnId
+     * @return
+     */
+    @Override
+    public Result deleteColumnById(Integer columnId) {
+        if (columnMapper.deleteByPrimaryKey(columnId) == 1) {
+            return Result.ok(ResultCode.DELETE_SUCCESS);
+        }
+        return Result.error(ResultCode.DELETE_ERROR);
     }
 }

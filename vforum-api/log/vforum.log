@@ -392,3 +392,298 @@ Using generated security password: a3940fb2-e3d5-4bfc-ac03-4cc5a503cf5b
 2021-01-26 00:55:01.687  INFO 2936 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-01-26 00:55:01.688  INFO 2936 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2021-01-26 00:55:22.654  INFO 2936 --- [http-nio-10086-exec-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-01-26 11:24:24.623  INFO 1112 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 1112 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-26 11:24:24.625  INFO 1112 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-26 11:24:25.223  WARN 1112 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 11:24:25.271  INFO 1112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-26 11:24:25.273  INFO 1112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-26 11:24:25.296  INFO 1112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2021-01-26 11:24:25.387  WARN 1112 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 11:24:25.549  INFO 1112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@383864d5' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 11:24:25.551  INFO 1112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 11:24:25.709  INFO 1112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-26 11:24:25.715  INFO 1112 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-26 11:24:25.716  INFO 1112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 11:24:25.782  INFO 1112 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-26 11:24:25.783  INFO 1112 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1126 ms
+2021-01-26 11:24:26.529  INFO 1112 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: db8e3106-5319-48e9-aa46-12ab17457909
+
+2021-01-26 11:24:26.592  INFO 1112 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@357c9bd9, org.springframework.security.web.context.SecurityContextPersistenceFilter@26d5a317, org.springframework.security.web.header.HeaderWriterFilter@6db328f8, org.springframework.security.web.authentication.logout.LogoutFilter@805e72e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a090f62, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b87760e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7aea704c, org.springframework.security.web.session.SessionManagementFilter@4a6c0f38, org.springframework.security.web.access.ExceptionTranslationFilter@4c319d52, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@fbe70d8]
+2021-01-26 11:24:26.612  INFO 1112 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 11:24:26.689  INFO 1112 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 11:24:26.938  INFO 1112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-26 11:24:26.939  INFO 1112 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-26 11:24:26.950  INFO 1112 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-26 11:24:26.976  INFO 1112 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-26 11:24:27.072  INFO 1112 --- [main] org.vforum.App                           : Started App in 2.936 seconds (JVM running for 3.59)
+2021-01-26 11:24:45.778  INFO 1112 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 11:24:45.778  INFO 1112 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-26 11:24:45.779  INFO 1112 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-26 11:25:54.959  INFO 1112 --- [http-nio-10086-exec-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-01-26 11:34:41.759  INFO 8792 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 8792 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-26 11:34:41.761  INFO 8792 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-26 11:34:42.276  WARN 8792 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 11:34:42.315  INFO 8792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-26 11:34:42.316  INFO 8792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-26 11:34:42.335  INFO 8792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-01-26 11:34:42.410  WARN 8792 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 11:34:42.551  INFO 8792 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3dd818e8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 11:34:42.553  INFO 8792 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 11:34:42.692  INFO 8792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-26 11:34:42.697  INFO 8792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-26 11:34:42.698  INFO 8792 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 11:34:42.757  INFO 8792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-26 11:34:42.758  INFO 8792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 971 ms
+2021-01-26 11:34:43.428  INFO 8792 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 14640aec-bfc4-4ae6-b32a-c3e1eb64f0d8
+
+2021-01-26 11:34:43.480  INFO 8792 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ae2e781, org.springframework.security.web.context.SecurityContextPersistenceFilter@18709cb2, org.springframework.security.web.header.HeaderWriterFilter@43935e9c, org.springframework.security.web.authentication.logout.LogoutFilter@36f6e521, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@89caf47, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2df65a56, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@339f3a55, org.springframework.security.web.session.SessionManagementFilter@559af296, org.springframework.security.web.access.ExceptionTranslationFilter@402f8592, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@296edc75]
+2021-01-26 11:34:43.499  INFO 8792 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 11:34:43.573  INFO 8792 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 11:34:43.791  INFO 8792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-26 11:34:43.791  INFO 8792 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-26 11:34:43.800  INFO 8792 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-26 11:34:43.823  INFO 8792 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-26 11:34:43.911  INFO 8792 --- [main] org.vforum.App                           : Started App in 2.443 seconds (JVM running for 2.949)
+2021-01-26 11:34:46.360  INFO 8792 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 11:34:46.360  INFO 8792 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-26 11:34:46.361  INFO 8792 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-26 11:34:56.030  INFO 8792 --- [http-nio-10086-exec-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-01-26 11:34:56.614 ERROR 8792 --- [http-nio-10086-exec-5] o.v.c.handler.GlobalExceptionHandler     : Invalid bound statement (not found): org.vforum.mapper.ColumnMapper.findUsableColumns
+2021-01-26 11:35:36.084  INFO 11816 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 11816 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-26 11:35:36.085  INFO 11816 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-26 11:35:36.611  WARN 11816 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 11:35:36.650  INFO 11816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-26 11:35:36.652  INFO 11816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-26 11:35:36.670  INFO 11816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-01-26 11:35:36.743  WARN 11816 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 11:35:36.881  INFO 11816 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3dd818e8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 11:35:36.883  INFO 11816 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 11:35:37.018  INFO 11816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-26 11:35:37.023  INFO 11816 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-26 11:35:37.023  INFO 11816 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 11:35:37.081  INFO 11816 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-26 11:35:37.081  INFO 11816 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 968 ms
+2021-01-26 11:35:37.746  INFO 11816 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: dcc2cabe-0676-40b0-b060-d5446dd4fbd7
+
+2021-01-26 11:35:37.798  INFO 11816 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15214920, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b24ea2a, org.springframework.security.web.header.HeaderWriterFilter@70b6db83, org.springframework.security.web.authentication.logout.LogoutFilter@12fcb2c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a0ea492, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@805e72e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@784d9bc, org.springframework.security.web.session.SessionManagementFilter@4b87760e, org.springframework.security.web.access.ExceptionTranslationFilter@3dbd7107, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4702e7a5]
+2021-01-26 11:35:37.817  INFO 11816 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 11:35:37.893  INFO 11816 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 11:35:38.110  INFO 11816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-26 11:35:38.110  INFO 11816 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-26 11:35:38.119  INFO 11816 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-26 11:35:38.142  INFO 11816 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-26 11:35:38.231  INFO 11816 --- [main] org.vforum.App                           : Started App in 2.433 seconds (JVM running for 2.94)
+2021-01-26 11:35:41.018  INFO 11816 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 11:35:41.018  INFO 11816 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-26 11:35:41.019  INFO 11816 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-26 11:35:41.068  INFO 11816 --- [http-nio-10086-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-01-26 11:35:41.702 ERROR 11816 --- [http-nio-10086-exec-1] o.v.c.handler.GlobalExceptionHandler     : 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'introduction' in 'field list'
+### The error may exist in file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ColumnMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select id, `name`, `introduction`, `create_time`, `subject`, `image`, `channel_id` from tb_channel where state = 1
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'introduction' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'introduction' in 'field list'
+2021-01-26 11:37:28.676  INFO 10724 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 10724 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-26 11:37:28.678  INFO 10724 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-26 11:37:29.197  WARN 10724 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 11:37:29.234  INFO 10724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-26 11:37:29.235  INFO 10724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-26 11:37:29.253  INFO 10724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-01-26 11:37:29.324  WARN 10724 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 11:37:29.463  INFO 10724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7c1e32c9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 11:37:29.466  INFO 10724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 11:37:29.607  INFO 10724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-26 11:37:29.613  INFO 10724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-26 11:37:29.613  INFO 10724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 11:37:29.671  INFO 10724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-26 11:37:29.671  INFO 10724 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 964 ms
+2021-01-26 11:37:30.333  INFO 10724 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3ba96520-9938-4b59-bce7-69e74fa2b34b
+
+2021-01-26 11:37:30.385  INFO 10724 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15214920, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b24ea2a, org.springframework.security.web.header.HeaderWriterFilter@70b6db83, org.springframework.security.web.authentication.logout.LogoutFilter@12fcb2c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a0ea492, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@805e72e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@784d9bc, org.springframework.security.web.session.SessionManagementFilter@4b87760e, org.springframework.security.web.access.ExceptionTranslationFilter@3dbd7107, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4702e7a5]
+2021-01-26 11:37:30.404  INFO 10724 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 11:37:30.488  INFO 10724 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 11:37:30.703  INFO 10724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-26 11:37:30.704  INFO 10724 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-26 11:37:30.712  INFO 10724 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-26 11:37:30.736  INFO 10724 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-26 11:37:30.826  INFO 10724 --- [main] org.vforum.App                           : Started App in 2.436 seconds (JVM running for 2.958)
+2021-01-26 11:37:38.623  INFO 10724 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 11:37:38.623  INFO 10724 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-26 11:37:38.624  INFO 10724 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-26 11:37:38.673  INFO 10724 --- [http-nio-10086-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-01-26 11:37:39.249 ERROR 10724 --- [http-nio-10086-exec-1] o.v.c.handler.GlobalExceptionHandler     : 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'introduction' in 'field list'
+### The error may exist in file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ColumnMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select id, `name`, `introduction`, `create_time`, `subject`, `image`, `channel_id` from tb_channel where state = 1
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'introduction' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'introduction' in 'field list'
+2021-01-26 11:38:30.953  INFO 7668 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 7668 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-26 11:38:30.955  INFO 7668 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-26 11:38:31.461  WARN 7668 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 11:38:31.500  INFO 7668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-26 11:38:31.502  INFO 7668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-26 11:38:31.520  INFO 7668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-01-26 11:38:31.595  WARN 7668 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 11:38:31.735  INFO 7668 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3dd818e8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 11:38:31.737  INFO 7668 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 11:38:31.872  INFO 7668 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-26 11:38:31.877  INFO 7668 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-26 11:38:31.877  INFO 7668 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 11:38:31.935  INFO 7668 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-26 11:38:31.935  INFO 7668 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 952 ms
+2021-01-26 11:38:32.596  INFO 7668 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0fe2e3f3-891f-41ca-8fac-dbdf3f493077
+
+2021-01-26 11:38:32.649  INFO 7668 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15214920, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b24ea2a, org.springframework.security.web.header.HeaderWriterFilter@70b6db83, org.springframework.security.web.authentication.logout.LogoutFilter@12fcb2c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a0ea492, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@805e72e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@784d9bc, org.springframework.security.web.session.SessionManagementFilter@4b87760e, org.springframework.security.web.access.ExceptionTranslationFilter@3dbd7107, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4702e7a5]
+2021-01-26 11:38:32.668  INFO 7668 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 11:38:32.744  INFO 7668 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 11:38:32.967  INFO 7668 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-26 11:38:32.968  INFO 7668 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-26 11:38:32.976  INFO 7668 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-26 11:38:33.000  INFO 7668 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-26 11:38:33.089  INFO 7668 --- [main] org.vforum.App                           : Started App in 2.433 seconds (JVM running for 2.982)
+2021-01-26 11:38:37.663  INFO 7668 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 11:38:37.663  INFO 7668 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-26 11:38:37.664  INFO 7668 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-26 11:38:37.712  INFO 7668 --- [http-nio-10086-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-01-26 11:38:38.269 ERROR 7668 --- [http-nio-10086-exec-1] o.v.c.handler.GlobalExceptionHandler     : 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'introduction' in 'field list'
+### The error may exist in file [F:\Code\11.Java\vforum\vforum-api\target\classes\mapper\ColumnMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select id, `name`, `introduction`, `create_time`, `subject`, `image`, `channel_id` from tb_channel where state = 1
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'introduction' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'introduction' in 'field list'
+2021-01-26 11:39:55.854  INFO 6332 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 6332 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-26 11:39:55.856  INFO 6332 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-26 11:39:56.383  WARN 6332 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 11:39:56.421  INFO 6332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-26 11:39:56.423  INFO 6332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-26 11:39:56.441  INFO 6332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-01-26 11:39:56.515  WARN 6332 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 11:39:56.654  INFO 6332 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3dd818e8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 11:39:56.656  INFO 6332 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 11:39:56.791  INFO 6332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-26 11:39:56.796  INFO 6332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-26 11:39:56.796  INFO 6332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 11:39:56.854  INFO 6332 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-26 11:39:56.854  INFO 6332 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 970 ms
+2021-01-26 11:39:57.523  INFO 6332 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0919dd45-ebf2-4429-8453-7112a8bc01c2
+
+2021-01-26 11:39:57.578  INFO 6332 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15214920, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b24ea2a, org.springframework.security.web.header.HeaderWriterFilter@70b6db83, org.springframework.security.web.authentication.logout.LogoutFilter@12fcb2c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a0ea492, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@805e72e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@784d9bc, org.springframework.security.web.session.SessionManagementFilter@4b87760e, org.springframework.security.web.access.ExceptionTranslationFilter@3dbd7107, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4702e7a5]
+2021-01-26 11:39:57.597  INFO 6332 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 11:39:57.682  INFO 6332 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 11:39:57.906  INFO 6332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-26 11:39:57.906  INFO 6332 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-26 11:39:57.915  INFO 6332 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-26 11:39:57.939  INFO 6332 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-26 11:39:58.030  INFO 6332 --- [main] org.vforum.App                           : Started App in 2.464 seconds (JVM running for 2.955)
+2021-01-26 11:39:59.926  INFO 6332 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 11:39:59.926  INFO 6332 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-26 11:39:59.927  INFO 6332 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-26 11:39:59.975  INFO 6332 --- [http-nio-10086-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-01-26 12:33:16.334  INFO 8000 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 8000 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-26 12:33:16.336  INFO 8000 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-26 12:33:16.859  WARN 8000 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 12:33:16.897  INFO 8000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-26 12:33:16.899  INFO 8000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-26 12:33:16.918  INFO 8000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-01-26 12:33:16.990  WARN 8000 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 12:33:17.129  INFO 8000 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3dd818e8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 12:33:17.131  INFO 8000 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 12:33:17.270  INFO 8000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-26 12:33:17.275  INFO 8000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-26 12:33:17.275  INFO 8000 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 12:33:17.336  INFO 8000 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-26 12:33:17.336  INFO 8000 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 972 ms
+2021-01-26 12:33:18.004  INFO 8000 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 938288ba-947d-4a9b-92e4-8d7551825de2
+
+2021-01-26 12:33:18.055  INFO 8000 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15214920, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b24ea2a, org.springframework.security.web.header.HeaderWriterFilter@70b6db83, org.springframework.security.web.authentication.logout.LogoutFilter@12fcb2c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a0ea492, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@805e72e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@784d9bc, org.springframework.security.web.session.SessionManagementFilter@4b87760e, org.springframework.security.web.access.ExceptionTranslationFilter@3dbd7107, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4702e7a5]
+2021-01-26 12:33:18.075  INFO 8000 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 12:33:18.159  INFO 8000 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 12:33:18.373  INFO 8000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-26 12:33:18.374  INFO 8000 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-26 12:33:18.382  INFO 8000 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-26 12:33:18.406  INFO 8000 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-26 12:33:18.494  INFO 8000 --- [main] org.vforum.App                           : Started App in 2.455 seconds (JVM running for 2.976)
+2021-01-26 12:33:25.101  INFO 8000 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 12:33:25.102  INFO 8000 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-26 12:33:25.102  INFO 8000 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-26 12:33:29.910  INFO 8000 --- [http-nio-10086-exec-8] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-01-26 12:45:03.519  INFO 3176 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 3176 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-26 12:45:03.521  INFO 3176 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-26 12:45:04.050  WARN 3176 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 12:45:04.090  INFO 3176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-26 12:45:04.092  INFO 3176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-26 12:45:04.111  INFO 3176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-01-26 12:45:04.183  WARN 3176 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 12:45:04.323  INFO 3176 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@481e91b6' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 12:45:04.325  INFO 3176 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 12:45:04.461  INFO 3176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-26 12:45:04.466  INFO 3176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-26 12:45:04.466  INFO 3176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 12:45:04.526  INFO 3176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-26 12:45:04.526  INFO 3176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 979 ms
+2021-01-26 12:45:05.189  INFO 3176 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 377cd772-00b3-4364-86da-5f759be4b237
+
+2021-01-26 12:45:05.240  INFO 3176 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b35798, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b87760e, org.springframework.security.web.header.HeaderWriterFilter@5f8a02cf, org.springframework.security.web.authentication.logout.LogoutFilter@35bd8bc9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b24ea2a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e52a26b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e00bfe2, org.springframework.security.web.session.SessionManagementFilter@2b877a54, org.springframework.security.web.access.ExceptionTranslationFilter@790d8fdd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ae2e781]
+2021-01-26 12:45:05.259  INFO 3176 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 12:45:05.339  INFO 3176 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 12:45:05.551  INFO 3176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-26 12:45:05.552  INFO 3176 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-26 12:45:05.560  INFO 3176 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-26 12:45:05.583  INFO 3176 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-26 12:45:05.671  INFO 3176 --- [main] org.vforum.App                           : Started App in 2.448 seconds (JVM running for 2.97)
+2021-01-26 12:45:14.957  INFO 3176 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 12:45:14.957  INFO 3176 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-26 12:45:14.958  INFO 3176 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-26 12:45:21.571  INFO 3176 --- [http-nio-10086-exec-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-01-26 12:50:03.709  INFO 10936 --- [main] org.vforum.App                           : Starting App using Java 1.8.0_221 on kuro with PID 10936 (F:\Code\11.Java\vforum\vforum-api\target\classes started by Alice in F:\Code\11.Java\vforum\vforum-api)
+2021-01-26 12:50:03.711  INFO 10936 --- [main] org.vforum.App                           : No active profile set, falling back to default profiles: default
+2021-01-26 12:50:04.234  WARN 10936 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 12:50:04.273  INFO 10936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-26 12:50:04.275  INFO 10936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-26 12:50:04.294  INFO 10936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-01-26 12:50:04.366  WARN 10936 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.vforum]' package. Please check your configuration.
+2021-01-26 12:50:04.509  INFO 10936 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7c1e32c9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 12:50:04.511  INFO 10936 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-26 12:50:04.647  INFO 10936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2021-01-26 12:50:04.653  INFO 10936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-26 12:50:04.653  INFO 10936 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 12:50:04.713  INFO 10936 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-26 12:50:04.713  INFO 10936 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 971 ms
+2021-01-26 12:50:05.376  INFO 10936 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 10e187ba-b8d9-4012-8c39-590b24b0239d
+
+2021-01-26 12:50:05.428  INFO 10936 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e28d779, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c1503a3, org.springframework.security.web.header.HeaderWriterFilter@a90e2c1, org.springframework.security.web.authentication.logout.LogoutFilter@68ea253b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47df5041, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55846997, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15214920, org.springframework.security.web.session.SessionManagementFilter@2df65a56, org.springframework.security.web.access.ExceptionTranslationFilter@5a090f62, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e00bfe2]
+2021-01-26 12:50:05.447  INFO 10936 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 12:50:05.528  INFO 10936 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 12:50:05.747  INFO 10936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2021-01-26 12:50:05.748  INFO 10936 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-26 12:50:05.756  INFO 10936 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-26 12:50:05.779  INFO 10936 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-26 12:50:05.868  INFO 10936 --- [main] org.vforum.App                           : Started App in 2.45 seconds (JVM running for 2.95)
+2021-01-26 12:50:08.408  INFO 10936 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 12:50:08.408  INFO 10936 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-26 12:50:08.409  INFO 10936 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-26 12:50:14.376  INFO 10936 --- [http-nio-10086-exec-8] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited

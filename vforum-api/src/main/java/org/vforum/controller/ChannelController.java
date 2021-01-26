@@ -22,16 +22,16 @@ public class ChannelController {
     @Autowired
     private ChannelService channelService;
 
-    @GetMapping("/pri/channel/all")
+    @GetMapping("/pri/channel")
     @ApiOperation(value = "所有频道", notes = "获取所有的频道")
     public Result findAllChannelList() {
         return channelService.findAllChannelList();
     }
 
-    @GetMapping("/pub/channel")
-    @ApiOperation(value = "可用频道", notes = "获取所有未被禁用的频道")
+    @GetMapping("/pub/channel/column")
+    @ApiOperation(value = "频道专栏", notes = "获取所有未被禁用的频道和专栏")
     public Result findUsableChannel() {
-        return channelService.findUsableChannel();
+        return channelService.findUsableChannelAndColumnByTree();
     }
 
     @PostMapping("/pri/channel")

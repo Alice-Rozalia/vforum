@@ -22,7 +22,7 @@ public class ColumnController {
     @Autowired
     private ColumnService columnService;
 
-    @GetMapping("/pub/column")
+    @GetMapping("/pri/column")
     @ApiOperation(value = "所有专栏", notes = "获取所有的专栏")
     public Result findAllColumnList() {
         return columnService.findAllColumnList();
@@ -34,9 +34,21 @@ public class ColumnController {
         return columnService.findColumnById(columnId);
     }
 
-    @PostMapping("/pri/column/add")
+    @PostMapping("/pri/column")
     @ApiOperation(value = "添加专栏", notes = "添加专栏")
     public Result addColumn(@RequestBody @Valid Column column) {
         return columnService.addColumn(column);
+    }
+
+    @PutMapping("/pri/column")
+    @ApiOperation(value = "修改专栏", notes = "修改专栏")
+    public Result updateColumn(@RequestBody @Valid Column column) {
+        return columnService.updateColumn(column);
+    }
+
+    @DeleteMapping("/pri/column/{columnId}")
+    @ApiOperation(value = "删除专栏", notes = "删除专栏")
+    public Result deleteColumnById(@PathVariable Integer columnId) {
+        return columnService.deleteColumnById(columnId);
     }
 }

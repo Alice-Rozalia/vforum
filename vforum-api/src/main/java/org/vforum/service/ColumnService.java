@@ -28,4 +28,18 @@ public interface ColumnService {
      * @return
      */
     Result addColumn(Column column);
+
+    /**
+     * 修改专栏
+     * @param column
+     * @return
+     */
+    Result updateColumn(Column column);
+
+    /**
+     * 删除专栏
+     * @param columnId
+     * @return
+     */
+    Result deleteColumnById(Integer columnId);
 }

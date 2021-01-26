@@ -42,6 +42,9 @@ public enum ResultCode implements CustomizeResultCode {
     DELETE_SUCCESS(3805, "删除成功！"),
     DELETE_ERROR(3806, "删除失败！"),
 
+    /* 关联数据 */
+    CHANNEL_HAS_COLUMN(4001, "有专栏从属于该频道，请先删除从属专栏后再删除！"),
+
     /*运行时异常*/
     ARITHMETIC_EXCEPTION(9001,"算数异常！"),
     HAS_ASSOCIATED_DATA(9100, "该数据有关联数据，操作失败！"),

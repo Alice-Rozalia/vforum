@@ -33,7 +33,7 @@ public interface ChannelService {
      * 查找未被禁用的频道
      * @return
      */
-    Result findUsableChannel();
+    Result findUsableChannelAndColumnByTree();
 
     /**
      * 删除频道

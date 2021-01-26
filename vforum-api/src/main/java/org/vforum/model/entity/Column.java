@@ -44,6 +44,12 @@ public class Column implements Serializable {
     @ApiModelProperty(value = "修改时间")
     private Long updateTime;
 
+    @ApiModelProperty(value = "贴数")
+    private Integer subject;
+
     @ApiModelProperty(value = "所属频道")
     private Integer ChannelId;
+
+    @ApiModelProperty(value = "专栏封面")
+    private String image;
 }

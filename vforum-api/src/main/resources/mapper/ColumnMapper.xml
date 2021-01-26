@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.vforum.mapper.ColumnMapper">
+
+    <select id="findUsableColumns" resultType="org.vforum.model.entity.Column">
+        select id, `name`, `introduction`, `create_time`, `subject`, `image`, `channel_id` from tb_column where state = 1
+    </select>
+
+    <select id="findColumnByChannelId" resultType="org.vforum.model.entity.Column">
+        select id, `channel_id` from tb_column where channel_id = #{channelId}
+    </select>
+
+</mapper>
