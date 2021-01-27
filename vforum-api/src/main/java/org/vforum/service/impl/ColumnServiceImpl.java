@@ -1,6 +1,7 @@
 package org.vforum.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.vforum.common.entity.Result;
 import org.vforum.common.entity.ResultCode;
@@ -20,9 +21,11 @@ public class ColumnServiceImpl implements ColumnService {
     @Autowired
     private ColumnMapper columnMapper;
 
+    @Autowired
+    private RedisTemplate redisTemplate;
+
     /**
      * 获取所有的专栏
-     *
      * @return
      */
     @Override
@@ -33,7 +36,6 @@ public class ColumnServiceImpl implements ColumnService {
 
     /**
      * 根据id查找专栏
-     *
      * @param columnId
      * @return
      */
@@ -45,7 +47,6 @@ public class ColumnServiceImpl implements ColumnService {
 
     /**
      * 添加专栏
-     *
      * @param column
      * @return
      */
@@ -54,6 +55,7 @@ public class ColumnServiceImpl implements ColumnService {
         column.setCreateTime(System.currentTimeMillis());
         column.setSubject(0);
         if (columnMapper.insertSelective(column) == 1) {
+            redisTemplate.delete("channel_column");
             return Result.ok(ResultCode.ADD_SUCCESS);
         }
         return Result.error(ResultCode.ADD_ERROR);
@@ -61,13 +63,13 @@ public class ColumnServiceImpl implements ColumnService {
 
     /**
      * 修改专栏
-     *
      * @param column
      * @return
      */
     @Override
     public Result updateColumn(Column column) {
         if (columnMapper.insertSelective(column) == 1) {
+            redisTemplate.delete("channel_column");
             return Result.ok(ResultCode.UPDATE_SUCCESS);
         }
         return Result.error(ResultCode.UPDATE_ERROR);
@@ -75,13 +77,13 @@ public class ColumnServiceImpl implements ColumnService {
 
     /**
      * 删除专栏
-     *
      * @param columnId
      * @return
      */
     @Override
     public Result deleteColumnById(Integer columnId) {
         if (columnMapper.deleteByPrimaryKey(columnId) == 1) {
+            redisTemplate.delete("channel_column");
             return Result.ok(ResultCode.DELETE_SUCCESS);
         }
         return Result.error(ResultCode.DELETE_ERROR);
